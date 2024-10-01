@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Section with Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css"> <!-- Link to Font Awesome -->
+</head>
+<body>
+    <!-- Search bar -->
+    <div class="search-section">
+        <input type="text" id="searchBar" placeholder="Search accordions..." />
+    </div>
+
+    <!-- Accordion Section -->
+    <div class="accordion-section">
+        <h2>Content Section</h2>
+        <button id="expandAll" class="expand-btn">Expand All</button>
+
+        <!-- Accordion 1 with Form -->
+        <div class="accordion" data-title="Accordion 1">
+            <div class="accordion-header">
+                <h3>Accordion 1 <i class="fa fa-plus"></i></h3>
+            </div>
+            <div class="accordion-content">
+                <form id="accordionForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="accordion" data-title="Accordion 2">
+            <div class="accordion-header">
+                <h3>Accordion 2 <i class="fa fa-plus"></i></h3>
+            </div>
+            <div class="accordion-content">
+                <p>This is the content for accordion 2.</p>
+            </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div class="accordion" data-title="Accordion 3">
+            <div class="accordion-header">
+                <h3>Accordion 3 <i class="fa fa-plus"></i></h3>
+            </div>
+            <div class="accordion-content">
+                <p>This is the content for accordion 3.</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
